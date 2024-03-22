@@ -1,9 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  font-family: 'Bangla', sans-serif;
+  font-family: "Bangla", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('bg.jpg');
+  background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -34,33 +34,39 @@ h1 {
   text-align: center;
 }
 
-
 .container {
-  padding: 20px; 
-  width: 90%; 
-  max-width: 800px; 
-  margin: auto; 
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
   overflow: auto;
 }
 
-
-#quiz {
-  border-radius: 20px; 
+#quiz,
+#break {
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 40px; 
+  padding: 40px;
+}
+
+#break {
+  text-align: center;
+  font-weight: bold;
+  color: #081e70;
+  font-size: 40px;
 }
 
 .question {
-  font-size: 30px; 
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   height: auto;
   overflow: hidden;
   color: #081e70;
 }
 
 #footer {
-  position:fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 97.9%;
@@ -74,8 +80,8 @@ h1 {
 .option {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
-  padding: 15px; 
-  margin-bottom: 20px; 
+  padding: 15px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   color: #000000;
@@ -96,9 +102,8 @@ h1 {
   font-weight: bold;
   color: #081e70;
   font-size: 40px;
-  order: 1; 
+  order: 1;
 }
-
 
 @media (min-width: 768px) {
   header {
@@ -106,30 +111,34 @@ h1 {
   }
 
   .container {
-    width: 70%; 
+    width: 70%;
     padding: 20px;
   }
 
   #quiz {
-    padding: 30px; 
+    padding: 30px;
+  }
+
+  #break {
+    display: none;
   }
 
   .question {
     font-size: 25px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 
   .option {
-    padding: 25px; 
-    margin-bottom: 15px; 
-    font-size: 25px; 
+    padding: 25px;
+    margin-bottom: 15px;
+    font-size: 25px;
   }
 
-  #timer, #question-number {
-    font-size: 30px; 
+  #timer,
+  #question-number {
+    font-size: 30px;
   }
 }
-
 
 /*Landing Page*/
 .landing-page {
@@ -171,11 +180,9 @@ h1 {
 }
 
 .btn:hover {
-  transition: .3s;
+  transition: 0.3s;
   background-color: #dcdcf3;
 }
-
-
 
 @media (min-width: 768px) {
   .landing-content {
